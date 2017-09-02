@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Oswald);
+
+$body-font: 'Roboto Slab', sans-serif;
+$title-font: 'Oswald', serif;
+$text-color: #333;
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $body-font;
+  text-align: left;
+  color: $text-color;
+}
+
+.row {
+  margin: 0;
+}
+
+.content-container {
+  float: left;
+  height: 100%;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $title-font;
+  line-height: 1.75;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-content {
+  height: 100%;
+  float: left;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.content-row {
+  flex: 1 1 auto;
+}
+
+#sidebar {
+  padding-top: 20px;
+  text-align: center;
+  float: right;
+
+  img {
+    max-width: 80%;
+    max-height: 275px;
+    border-radius: 100%;
+  }
+
+  div {
+    width: 100%;
+  }
+}
+
+a {
+  h1, h2, h3, h4 {
+    color: $text-color;
+  }
+}
+
+.card-badge {
+  width: 100px;
+  margin: 2px;
+  float: right;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  padding: 15px 0;
+  p {
+    margin: 0;
+  }
+}
